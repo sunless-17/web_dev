@@ -3,17 +3,20 @@ use dioxus::prelude::*;
 #[component]
 pub fn Hero() -> Element {
     rsx! {
+        body {
+            class: "bg-white"
+        }
+        h1 {
+            class: "text-red-50",
+            "Hello World"
+        }
         div {
-            id: "hero",
-            div {
-                id: "links",
-                a { href: "https://dioxuslabs.com/learn/0.6/", "📚 Learn Dioxus" }
-                a { href: "https://dioxuslabs.com/awesome", "🚀 Awesome Dioxus" }
-                a { href: "https://github.com/dioxus-community/", "📡 Community Libraries" }
-                a { href: "https://github.com/DioxusLabs/sdk", "⚙️ Dioxus Development Kit" }
-                a { href: "https://marketplace.visualstudio.com/items?itemName=DioxusLabs.dioxus", "💫 VSCode Extension" }
-                a { href: "https://discord.gg/XgGxMSkvUM", "👋 Community Discord" }
+            class: "w-full bg-red-800",
+            h1 {
+                class: "text-center text-9xl font-black",
+                "hi"
             }
         }
+        p { "yoo" }
     }
 }
