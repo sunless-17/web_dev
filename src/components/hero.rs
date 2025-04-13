@@ -1,22 +1,22 @@
 use dioxus::prelude::*;
 
 #[component]
-pub fn Hero() -> Element {
+pub fn Nav() -> Element {
     rsx! {
-        body {
-            class: "bg-white"
-        }
-        h1 {
-            class: "text-red-50",
-            "Hello World"
-        }
-        div {
-            class: "w-full bg-red-800",
-            h1 {
-                class: "text-center text-9xl font-black",
-                "hi"
+       nav {
+         class: "bg-blue-500 py-4 px-6 flex items-center justify-between",
+            div {
+                h1 {
+                    class:"text-sky-400 text-sm",
+                    "My Awesome App"
+                }
             }
-        }
-        p { "yoo" }
+
+            div {
+                class: "flex items-center space-x-4 text-red-50",
+                span { "sunless" }
+                span { "light" }
+            }
+       }
     }
 }

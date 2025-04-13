@@ -1,7 +1,10 @@
 use dioxus::prelude::*;
 
-use components::Hero;
+// add files listed in the components.rs
 mod components;
+
+// import Nav component from /src/components/hero.rs
+use components::hero::Nav;
 
 const FAVICON: Asset = asset!("/assets/favicon.ico");
 const MAIN_CSS: Asset = asset!("/assets/styling/main.css");
@@ -18,7 +21,8 @@ fn App() -> Element {
         document::Link { rel: "stylesheet", href: MAIN_CSS }
         document::Link { rel: "stylesheet", href: TAILWIND_CSS }
 
-        Hero {}
+        // imported components
+        Nav {}
 
     }
 }
