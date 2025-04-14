@@ -3,14 +3,14 @@
 .visible {
   visibility: visible;
 }
+.container {
+  width: 100%;
+}
+.mx-auto {
+  margin-inline: auto;
+}
 .flex {
   display: flex;
-}
-.h-screen {
-  height: 100vh;
-}
-.w-full {
-  width: 100%;
 }
 .transform {
   transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
@@ -23,9 +23,6 @@
 }
 .justify-between {
   justify-content: space-between;
-}
-.justify-center {
-  justify-content: center;
 }
 @property --tw-rotate-x {
   syntax: "*";
