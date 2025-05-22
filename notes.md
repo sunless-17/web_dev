@@ -23,5 +23,5 @@
 - onclick closures to increment count + setting count as a `use_signal(||0)`
 
 # quest
-- signal?
-- web storage ... some kind of cache
+- components (navbar, body)
+- backend (axum hello world + surreal)
